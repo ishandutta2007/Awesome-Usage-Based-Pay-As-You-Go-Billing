@@ -70,34 +70,34 @@ Commercial, cloud-hosted Usage-Based and Pay-as-you-go Billing platforms. These 
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Usage-Based Billing platforms, sorted by GitHub stars (descending).
+Self-hosted, community-driven Usage-Based Billing platforms, sorted by GitHub_Stars (descending).
 
-### Lago [![GitHub stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
+### Lago [![GitHub_Stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
 **Repo:** [getlago/lago](https://github.com/getlago/lago) | **Stack:** Ruby / PostgreSQL / ClickHouse / Redis | **License:** AGPL-3.0  
 Lago is an established open-source metering and usage-based billing platform. It handles usage-based, subscription, prepaid, and hybrid pricing on a unified engine. The open-source edition provides core billing infrastructure: high-throughput usage ingestion, billable metrics, plans, subscriptions, invoicing, and payment processor integrations (Stripe, Adyen, GoCardless).  
 **Best for:** Engineering teams needing a mature, self-hosted billing engine with deep extensibility and hybrid subscription capabilities.
 
-### Flexprice [![GitHub stars](https://img.shields.io/github/stars/flexprice/flexprice?style=social&color=white)](https://github.com/flexprice/flexprice/stargazers)
+### Flexprice [![GitHub_Stars](https://img.shields.io/github/stars/flexprice/flexprice?style=social&color=white)](https://github.com/flexprice/flexprice/stargazers)
 **Repo:** [flexprice/flexprice](https://github.com/flexprice/flexprice) | **Stack:** Go / PostgreSQL / ClickHouse | **License:** AGPL-3.0  
 Flexprice is a developer-first, open-source usage-based pricing and billing infrastructure. It provides real-time event metering, wallet and prepaid top-ups, no-code UI for pricing configurations, tiered and graduated pricing models, and feature entitlement controls to govern application access dynamically.  
 **Best for:** Developers building modern SaaS and AI applications that need lightweight real-time metering, wallet credit balances, and entitlement gating.
 
-### Kill Bill [![GitHub stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
+### Kill Bill [![GitHub_Stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
 **Repo:** [killbill/killbill](https://github.com/killbill/killbill) | **Stack:** Java / MySQL / PostgreSQL / OSGi | **License:** Apache-2.0  
 Kill Bill is a battle-tested, enterprise open-source subscription billing and payments platform. While originally designed for complex recurring subscription workflows, Kill Bill supports metered consumption, custom rating plugins, usage rollups, and invoice generation through its modular architecture and usage plugins.  
 **Best for:** Enterprise teams requiring a robust, highly modular Java billing backbone with flexible payment processor routing and custom plugin systems.
 
-### OpenMeter [![GitHub stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers)
+### OpenMeter [![GitHub_Stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers)
 **Repo:** [openmeterio/openmeter](https://github.com/openmeterio/openmeter) | **Stack:** Go / PostgreSQL / ClickHouse / Kafka | **License:** Apache-2.0  
 OpenMeter is an open-source real-time metering and billing engine optimized for high-volume event ingestion and low-latency balance tracking. It ingests events via CloudEvents format, defines meters with flexible aggregations (SUM, COUNT, AVG, MIN, MAX), and queries usage in real time. Features include tiered/graduated pricing, prepaid credits, entitlement tracking, customer portals, and first-class LLM token cost tracking under a permissive Apache-2.0 license.  
 **Best for:** AI, agentic, and DevTool companies needing high-throughput real-time token metering and entitlement limits with an Apache-2.0 license.
 
-### Meteroid [![GitHub stars](https://img.shields.io/github/stars/meteroid-oss/meteroid?style=social&color=white)](https://github.com/meteroid-oss/meteroid/stargazers)
+### Meteroid [![GitHub_Stars](https://img.shields.io/github/stars/meteroid-oss/meteroid?style=social&color=white)](https://github.com/meteroid-oss/meteroid/stargazers)
 **Repo:** [meteroid-oss/meteroid](https://github.com/meteroid-oss/meteroid) | **Stack:** Rust / PostgreSQL | **License:** AGPL-3.0  
 Meteroid is a high-performance open-source pricing and billing infrastructure written in Rust. It supports real-time usage event ingestion, subscription management, usage-based billing, cost limiting, automated invoicing, grandfathering of legacy plans, pricing experiments, and revenue analytics.  
 **Best for:** Performance-sensitive teams looking for a high-efficiency Rust-based metering and usage billing engine.
 
-### Formance [![GitHub stars](https://img.shields.io/github/stars/formancehq/stack?style=social&color=white)](https://github.com/formancehq/stack/stargazers)
+### Formance [![GitHub_Stars](https://img.shields.io/github/stars/formancehq/stack?style=social&color=white)](https://github.com/formancehq/stack/stargazers)
 **Repo:** [formancehq/stack](https://github.com/formancehq/stack) | **Stack:** Go / PostgreSQL | **License:** Open Source  
 Formance Stack is an open-source financial orchestration and programmable ledger engine. While acting as a foundational ledger for financial transactions, it enables developers to track usage flows, map consumption credits into double-entry ledgers, and orchestrate complex pay-as-you-go settlement and payout flows across multiple providers.  
 **Best for:** Fintech and platform teams requiring double-entry ledger accuracy for complex pay-as-you-go money flows, wallets, and multi-party consumption.
