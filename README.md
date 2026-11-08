@@ -1,9 +1,17 @@
-# Awesome-Usage-Based-Pay-As-You-Go-Billing
-
 # Awesome Usage-Based & Pay-as-you-go Billing
 
-> A curated list of top Usage-Based and Pay-as-you-go Billing platforms — both SaaS/Hosted commercial solutions and open-source alternatives for metering, rating, and invoicing consumption-based pricing.  
-> 🌟 Star this repo if you find it useful! 🌟
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Usage-Based-Pay-As-You-Go-Billing/pulls)
+
+> A curated list of the best **Usage-Based Billing (UBB)**, **Pay-As-You-Go**, and **consumption pricing platforms** — comparing enterprise SaaS billing solutions, high-throughput AI metering engines, and production-ready open-source alternatives.
+
+---
+
+### 🔍 Quick Definitions & Keywords
+- **Usage-Based Billing (UBB):** A revenue model where customers are billed based on actual resource consumption (e.g., API requests, compute hours, storage GB, active users).
+- **Pay-As-You-Go (PAYG):** Pure consumption billing with zero base subscription overhead.
+- **LLM Token & Agent Metering:** Real-time event ingestion that tracks input tokens, output tokens, and reasoning costs for modern generative AI and agentic software.
 
 ---
 
@@ -11,24 +19,17 @@
 
 - [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Chargebee](#chargebee)
-  - [Metronome](#metronome)
-  - [Orb](#orb)
-  - [m3ter](#m3ter)
-  - [Togai](#togai)
-  - [Amberflo](#amberflo)
-  - [Octane](#octane)
-  - [Monetize360](#monetize360)
-  - [Zuora](#zuora)
 - [Open-Source Software](#-open-source-software)
-  - [Lago](#lago)
-  - [Flexprice](#flexprice)
-  - [Kill Bill](#kill-bill)
-  - [OpenMeter](#openmeter)
-  - [Meteroid](#meteroid)
-  - [Formance](#formance)
+  - [Lago](#lago-)
+  - [Flexprice](#flexprice-)
+  - [Kill Bill](#kill-bill-)
+  - [OpenMeter](#openmeter-)
+  - [Meteroid](#meteroid-)
+  - [Formance](#formance-)
 - [Comparison at a Glance](#-comparison-at-a-glance)
+- [Frequently Asked Questions (FAQ)](#-frequently-asked-questions-faq)
 - [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
@@ -114,6 +115,19 @@ Formance Stack is an open-source financial orchestration and programmable ledger
 
 ---
 
+## ❓ Frequently Asked Questions (FAQ)
+
+### What is the difference between subscription billing and usage-based billing?
+Traditional subscription billing charges a fixed recurring fee (e.g., $49/month) regardless of activity. Usage-based billing (or metered consumption) ingests granular telemetry events (API hits, LLM tokens, gigabytes transferred, compute seconds) and computes charges dynamically based on tiered, graduated, or volume rate cards.
+
+### Which open-source usage-based billing tool is best for AI / LLM applications?
+**OpenMeter** (Apache-2.0) and **Flexprice** (AGPL-3.0) provide first-class support for low-latency streaming event ingestion, prepaid wallet drawdowns, and token cost tracking designed specifically for LLM APIs and agentic workloads.
+
+### How do usage-based billing platforms connect with payment gateways?
+Metering engines like Lago, OpenMeter, and Metronome act as the calculation and rating layer. Once an invoice is generated at the close of a billing cycle, the platform delegates fund collection to payment gateways such as Stripe, Adyen, Braintree, or GoCardless via webhooks and native API connectors.
+
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! If you know of an open-source Usage-Based or Pay-as-you-go Billing platform that should be listed here, please open a pull request with:
@@ -123,7 +137,7 @@ Contributions are welcome! If you know of an open-source Usage-Based or Pay-as-y
 - Stack and license
 - Why it stands out
 
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem for usage-based billing is **very limited** — Lago and OpenMeter are the two mature options, with OpenMeter being the stronger choice for real-time AI/LLM token metering under a permissive Apache-2.0 license.
+Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
 
 ---
 
