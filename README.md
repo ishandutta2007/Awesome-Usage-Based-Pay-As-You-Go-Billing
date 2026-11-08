@@ -1,35 +1,46 @@
-# Awesome Usage-Based & Pay-as-you-go Billing
+# ⚡ Awesome Usage-Based & Pay-as-you-go Billing 💳
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Usage-Based-Pay-As-You-Go-Billing/pulls)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Usage-Based & Pay-as-you-go Billing Banner" width="100%" />
+</p>
 
-> A curated list of the best **Usage-Based Billing (UBB)**, **Pay-As-You-Go**, and **consumption pricing platforms** — comparing enterprise SaaS billing solutions, high-throughput AI metering engines, and production-ready open-source alternatives.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Usage-Based-Pay-As-You-Go-Billing/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🚀 A curated list of the best **Usage-Based Billing (UBB)**, **Pay-As-You-Go (PAYG)**, and **consumption pricing platforms** — comparing enterprise SaaS billing solutions, high-throughput AI metering engines, and production-ready open-source alternatives.  
+> 🌟 Star this repo if you find it useful! 🌟
 
 ---
 
 ### 🔍 Quick Definitions & Keywords
-- **Usage-Based Billing (UBB):** A revenue model where customers are billed based on actual resource consumption (e.g., API requests, compute hours, storage GB, active users).
-- **Pay-As-You-Go (PAYG):** Pure consumption billing with zero base subscription overhead.
-- **LLM Token & Agent Metering:** Real-time event ingestion that tracks input tokens, output tokens, and reasoning costs for modern generative AI and agentic software.
+- 📊 **Usage-Based Billing (UBB):** A revenue model where customers are billed based on actual resource consumption (e.g., API requests, compute hours, storage GB, active users).
+- 💸 **Pay-As-You-Go (PAYG):** Pure consumption billing with zero base subscription overhead.
+- 🧠 **LLM Token & Agent Metering:** Real-time event ingestion that tracks input tokens, output tokens, and reasoning costs for modern generative AI and agentic software.
 
 ---
 
 ## 📋 Table of Contents
 
-- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-- [Open-Source Software](#-open-source-software)
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🟦 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [🟩 Open-Source Software](#-open-source-software)
   - [Lago](#lago-)
   - [Flexprice](#flexprice-)
   - [Kill Bill](#kill-bill-)
   - [OpenMeter](#openmeter-)
   - [Meteroid](#meteroid-)
   - [Formance](#formance-)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Frequently Asked Questions (FAQ)](#-frequently-asked-questions-faq)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [📊 Comparison at a Glance](#-comparison-at-a-glance)
+- [❓ Frequently Asked Questions (FAQ)](#-frequently-asked-questions-faq)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
 ---
 
@@ -125,6 +136,34 @@ Traditional subscription billing charges a fixed recurring fee (e.g., $49/month)
 
 ### How do usage-based billing platforms connect with payment gateways?
 Metering engines like Lago, OpenMeter, and Metronome act as the calculation and rating layer. Once an invoice is generated at the close of a billing cycle, the platform delegates fund collection to payment gateways such as Stripe, Adyen, Braintree, or GoCardless via webhooks and native API connectors.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Usage-Based-Pay-As-You-Go-Billing&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Usage-Based-Pay-As-You-Go-Billing&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you so much for checking out **Awesome Usage-Based & Pay-as-you-go Billing**! 🙌
+
+If you find this curated resource helpful for your projects, architecture design, or evaluation workflows, please consider supporting the project:
+
+- ⭐ **Star this repository** to show your appreciation and help others discover it.
+- 🍴 **Fork and contribute** your favorite usage-based billing tools, SDKs, or insights.
+- 📢 **Share with fellow developers**, founders, and DevOps engineers on Twitter/X, LinkedIn, Reddit, or Discord.
+- ☕ **Buy me a coffee / Sponsor:** If you would like to support ongoing maintenance and new curated additions, you can sponsor through the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007):
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor%20on%20GitHub-%23ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Sponsor on GitHub" />
+  </a>
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" />
+  </a>
+</p>
 
 ---
 

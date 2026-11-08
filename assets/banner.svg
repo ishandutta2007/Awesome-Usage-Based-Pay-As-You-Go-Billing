@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16;border-radius:16px;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="accentEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 41, 59, 0.7)" />
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.85)" />
+    </linearGradient>
+
+    <linearGradient id="pulseLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* Keyframe animations for dynamic ambient telemetry pulses */
+    @keyframes waveDash {
+      0% { stroke-dashoffset: 600; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pulseOpacity {
+      0%, 100% { opacity: 0.25; transform: scale(0.98); }
+      50% { opacity: 0.65; transform: scale(1.02); }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-12px) translateX(8px); opacity: 0.8; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+    }
+    @keyframes meterFlow {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: -200; }
+    }
+    @keyframes pillGlow {
+      0%, 100% { stroke: #38bdf8; stroke-opacity: 0.4; }
+      50% { stroke: #34d399; stroke-opacity: 0.9; }
+    }
+
+    .telemetry-wave {
+      stroke-dasharray: 20 10;
+      animation: meterFlow 12s linear infinite;
+    }
+    .ambient-glow {
+      animation: pulseOpacity 6s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .particle-1 { animation: floatParticle 5s ease-in-out infinite; }
+    .particle-2 { animation: floatParticle 7s ease-in-out infinite reverse; }
+    .pill-border { animation: pillGlow 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" fill="url(#bgGlow)" />
+
+  <!-- Dynamic Ambient Background Glows (behind text) -->
+  <g class="ambient-glow">
+    <circle cx="200" cy="180" r="140" fill="#0284c7" opacity="0.15" filter="url(#glow)" />
+    <circle cx="1000" cy="180" r="150" fill="#059669" opacity="0.12" filter="url(#glow)" />
+  </g>
+
+  <!-- Decorative Background Flow Streams (behind text) -->
+  <g opacity="0.4">
+    <!-- Grid lines -->
+    <path d="M 0 60 L 1200 60 M 0 120 L 1200 120 M 0 180 L 1200 180 M 0 240 L 1200 240 M 0 300 L 1200 300" stroke="#1e293b" stroke-width="0.7" stroke-dasharray="4 6" />
+    <path d="M 150 0 L 150 360 M 350 0 L 350 360 M 600 0 L 600 360 M 850 0 L 850 360 M 1050 0 L 1050 360" stroke="#1e293b" stroke-width="0.7" stroke-dasharray="4 6" />
+
+    <!-- Sine Wave / Usage Metering Stream Curves -->
+    <path d="M 50 300 C 250 320, 350 240, 550 270 C 750 300, 950 220, 1150 250" fill="none" stroke="url(#pulseLine)" stroke-width="2" class="telemetry-wave" />
+    <path d="M 50 320 C 300 290, 450 330, 700 290 C 900 260, 1050 310, 1150 280" fill="none" stroke="#34d399" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="10 8" />
+  </g>
+
+  <!-- Dynamic Metering Nodes / Float Particles -->
+  <g class="particle-1">
+    <circle cx="180" cy="90" r="4" fill="#38bdf8" filter="url(#subtleGlow)" />
+    <circle cx="1060" cy="110" r="5" fill="#34d399" filter="url(#subtleGlow)" />
+    <circle cx="980" cy="280" r="3.5" fill="#38bdf8" opacity="0.7" />
+  </g>
+  <g class="particle-2">
+    <circle cx="120" cy="260" r="4.5" fill="#34d399" filter="url(#subtleGlow)" />
+    <circle cx="890" cy="70" r="3" fill="#a78bfa" opacity="0.8" />
+  </g>
+
+  <!-- Top Category Badge Pill -->
+  <g transform="translate(435, 42)">
+    <rect x="0" y="0" width="330" height="34" rx="17" fill="rgba(15, 23, 42, 0.85)" stroke="#38bdf8" stroke-width="1.2" class="pill-border" />
+    <!-- Pulse dot -->
+    <circle cx="22" cy="17" r="4.5" fill="#34d399" filter="url(#subtleGlow)" />
+    <text x="36" y="22" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1.5">CONSUMPTION PRICING &amp; METERING</text>
+  </g>
+
+  <!-- Foreground Primary Header Title -->
+  <!-- Crisp, highly legible, unobstructed text layout -->
+  <text x="600" y="140" text-anchor="middle" font-size="44" font-weight="900" fill="url(#titleGrad)" letter-spacing="-0.5" filter="drop-shadow(0px 4px 12px rgba(0,0,0,0.8))">
+    USAGE-BASED &amp; PAY-AS-YOU-GO
+  </text>
+  <text x="600" y="195" text-anchor="middle" font-size="36" font-weight="800" fill="#ffffff" letter-spacing="2" filter="drop-shadow(0px 4px 10px rgba(0,0,0,0.8))">
+    BILLING PLATFORMS
+  </text>
+
+  <!-- Foreground Subtitle -->
+  <text x="600" y="240" text-anchor="middle" font-size="15" font-weight="500" fill="#94a3b8" letter-spacing="0.3">
+    Enterprise SaaS Architectures • High-Throughput AI/LLM Token Metering • Open-Source Engines
+  </text>
+
+  <!-- Foreground Metric Feature Badges (Pills) -->
+  <g transform="translate(240, 275)">
+    <!-- Pill 1: Event Ingestion -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="42" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1" />
+      <text x="20" y="26" font-size="14" fill="#38bdf8">⚡</text>
+      <text x="44" y="26" font-size="12" font-weight="600" fill="#e2e8f0">Real-Time Ingestion</text>
+    </g>
+
+    <!-- Pill 2: AI Token Metering -->
+    <g transform="translate(255, 0)">
+      <rect width="210" height="42" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1" />
+      <text x="20" y="26" font-size="14" fill="#34d399">🧠</text>
+      <text x="44" y="26" font-size="12" font-weight="600" fill="#e2e8f0">LLM Token Rating</text>
+    </g>
+
+    <!-- Pill 3: Self-Hosted & OSS -->
+    <g transform="translate(510, 0)">
+      <rect width="210" height="42" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1" />
+      <text x="20" y="26" font-size="14" fill="#a78bfa">🔓</text>
+      <text x="44" y="26" font-size="12" font-weight="600" fill="#e2e8f0">Self-Hosted / OSS</text>
+    </g>
+  </g>
+</svg>
