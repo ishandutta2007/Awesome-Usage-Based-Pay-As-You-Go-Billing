@@ -31,41 +31,17 @@
 
 Commercial, cloud-hosted Usage-Based and Pay-as-you-go Billing platforms. These are not open-source but are included as reference points for feature comparison.
 
-### Chargebee
-**Type:** Subscription and usage-based billing platform  
-Chargebee's Usage Ecosystem provides high-volume usage ingestion with schemaless tracking, flexible pricing design (pay-as-you-go, bundled features, or hybrid plans), and accurate billing at scale [citation:1]. It supports two primary usage models: **Fixed Fee + Overages** (base fee for included usage, per-unit charges beyond) and **Pay As You Go** (billed only for consumption during the billing cycle) [citation:12]. The platform offers 100 million free usage events per month for 24 months to customers who sign up by June 30, 2025 [citation:1].
-
-### Metronome
-**Type:** Usage-based billing infrastructure for AI and API products  
-Metronome is purpose-built for high-volume, real-time metering. Its billable metrics support aggregation types including count, sum, unique, max, and latest, plus SQL-based metrics for complex calculations [citation:2]. **Group keys** enable dimensional pricing (different rates per AI model, region, or instance type) and invoice line-item breakdowns. Products can be usage, subscription, composite, or fixed, with tiered rates and commit drawdown support [citation:2][citation:13]. SDKs are available for multiple languages.
-
-### Orb
-**Type:** Billing infrastructure for usage-based and hybrid pricing  
-Orb provides usage-based pricing, metering, and invoicing for API and cloud products [citation:14]. It offers a **Free Forever** tier with 10 Orbs included, and a paid plan at $20/month or $200/year for up to 5 Orbs, with custom enterprise pricing for higher volumes [citation:3]. Positioned for developers wanting straightforward usage billing without enterprise sales cycles.
-
-### m3ter
-**Type:** Metered billing and pricing platform  
-m3ter provides a comprehensive metering and rating engine for usage-based pricing. The platform includes a Console for configuration and API access, with a structured workflow covering accounts, products, meters, and bills [citation:5]. It supports tiered, volume, and custom pricing models, with worked examples for implementing usage-based pricing solutions.
-
-### Togai
-**Type:** Usage metering and billing with flexible pricing models  
-Togai is built around pricing configurability, supporting usage-based, seat-based, and hybrid models, with pre-paid, credits, post-paid, and commitment payment terms [citation:6]. Its four building blocks are: event schema definition, metering aggregation, price plan configuration, and customer onboarding. The platform automates invoicing at the end of each billing cycle based on configured rate cards [citation:6].
-
-### Amberflo
-**Type:** Metering and cost calculation platform  
-Amberflo's meter rates define how usage converts to cost. It supports **Per Unit** pricing (uniform cost per unit) and **Per Unit with Dimensions** (cost varies by usage attributes), which is the standard approach for real-world systems like token-based AI pricing [citation:7]. Rates can change over time with new configurations applied going forward, preserving historical accuracy.
-
-### Octane
-**Type:** Usage-based pricing and monetization platform  
-Octane provides a REST API for managing meters, pricing plans, customer entitlements, and real-time usage tracking. It supports counters, metered components, flat-rate schemes, discounts, trials, and add-ons. API resources include Meters, Price Plans, Subscriptions, Customers, Invoices, Credits, and Live Measurements, enabling real-time usage retrieval [citation:8].
-
-### Monetize360
-**Type:** Revenue infrastructure for consumption and outcome-based models  
-Monetize360 positions itself as a financial control layer for metering, pricing, and revenue capture across usage, consumption, tokens, and agent-based models [citation:9]. It is SOC 2 Type 2 certified and deployable on SaaS, Virtual Private Cloud, or on-premises. API-native connectors integrate with existing ERP, CRM, and billing platforms rather than requiring rip-and-replace [citation:9].
-
-### Zuora
-**Type:** Enterprise metered billing and revenue recognition  
-Zuora provides usage-based pricing and billing with a focus on finance teams. It supports metered, tiered, volume block, and overage pricing models, plus committed usage automation for prepaid and token-based models . Features include detailed usage line items on invoices, revenue recognition templates, and audit-ready usage reporting that traces back to individual usage records .
+| Platform | Type | Starting Pricing | Free Tier / Trial Limit |
+|---|---|---|---|
+| **Chargebee** | Subscription & hybrid usage billing | Free up to $250k cumulative revenue, then 0.75% overage fee (or Starter from $0/mo; Performance tier from $599/mo) | Free forever for up to $250,000 in lifetime billing (up to $1M revenue for qualifying startups) |
+| **Metronome** | High-volume AI & API consumption billing | Starter plan: 0.8% of billings + $0.04 per 1,000 ingested events (Custom enterprise) | Free tier available (no upfront monthly subscription platform fee; pay-per-event/billings) |
+| **Orb** | Developer-centric usage billing infrastructure | Paid plan starts at $20/month (or $200/year for up to 5 Orbs; Custom enterprise) | Free forever plan with 10 Orbs included |
+| **m3ter** | Metered rating engine & pricing operations | Custom monthly base platform fee (typically starts with custom enterprise deployments) | No public self-serve free tier; custom proof-of-concept (PoC) / sandbox provided upon demo request |
+| **Togai** | Usage metering & pricing orchestrator | Historically Starter from $0/mo; Growth tier at 0.5% of invoice amount (now part of Zuora) | Free Starter tier offered 1,000,000 events/month and up to $10,000 in monthly invoice volume |
+| **Amberflo** | Real-time cloud metering & cost calculation | Free tier; paid startup tiers start at $99/month (or pay-as-you-go overages) | Free forever plan includes up to 1,000,000 meter events per month |
+| **Octane** | Usage-based pricing & monetization engine | Seed-stage developer API platform (Acquired by Stripe; custom enterprise quote) | Custom developer sandbox / pilot trial access upon consultation request |
+| **Monetize360** | Revenue infrastructure for consumption & outcome models | Custom enterprise platform quotation based on high-volume data streams & modules | No self-serve free tier; custom evaluation lab / sandbox environment granted via enterprise sales demo |
+| **Zuora** | Enterprise metered billing & revenue automation | Enterprise contracts typically start at ~$75,000/year (billed annually based on volume/edition) | 30-day evaluation trial / sandbox environment available upon enterprise sales qualification |
 
 ---
 
