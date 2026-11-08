@@ -9,6 +9,7 @@
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
   - [Chargebee](#chargebee)
   - [Metronome](#metronome)
@@ -24,6 +25,12 @@
   - [OpenMeter](#openmeter)
 - [Comparison at a Glance](#-comparison-at-a-glance)
 - [Contributing](#-contributing)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global Usage-Based Billing (UBB) and consumption pricing software market is estimated at **$6.8B to $7.4B** (projected to reach ~$11.5B by the early 2030s at a ~7.7% CAGR, with AI/LLM token-metering niches growing above 15%). The sector is **moderately-to-highly fragmented** rather than winner-take-all: no single player controls more than ~15% market share due to distinct tier bifurcations across legacy enterprise ERP suites (Zuora, Salesforce), high-frequency AI/API metering engines (Metronome, Orb, OpenMeter), and self-hosted open-source stacks (Lago, Flexprice).
 
 ---
 
